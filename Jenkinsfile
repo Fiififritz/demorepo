@@ -7,9 +7,9 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Run Linux command') {
+        stage('Run web page') {
             steps {
-                sh 'date'
+                sh 'cat index.html'
             }
         }
         stage('Run multi command') {
